@@ -1,10 +1,10 @@
 # pytorch-graphdl
-PyTorch Implementation of popular Graph Neural Networks.
+PyTorch Implementation of popular Graph Deep Learning (GDL) architectures.
 
 ## What is this?
 This is a sincere effort to learn more about Graph Deep Learning and the various networks within. This is partly motivated by a few factors:
 
-- I wish to enter GDL as a research focus area
+- I wish to enter GDL as a research focus area (and apply it in RL)
 - I am inspired by the GDL researchers I follow on Twitter
 - I am trying to apply GDL to biomedical/bioinformatics applications (so practice makes perfect!)
 - I want to learn `torch_geometric` (and if time allows, `dgl` and `spektral`)
@@ -19,6 +19,12 @@ This is a sincere effort to learn more about Graph Deep Learning and the various
 - `max`: gets the maximum node feature vector
 - `min`: gets the minimum node feature vector
 - `mean`: gets the mean of all node feature vectors
+
+## Tasks
+In GDL, there are two types of tasks: `transductive` and `inductive`
+
+- **Transductive Learning**: training and testing nodes co-exist during training; model captures feature vectors of testing nodes but not the labels
+- **Inductive Learning**: testing nodes are completely disjoint from training nodes; model is unaware of testing nodes during training
 
 ## Models
 This repository contains the following model implementations:
