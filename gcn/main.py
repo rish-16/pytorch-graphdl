@@ -8,7 +8,6 @@ from torch_geometric.data import DataLoader
 from torch_geometric.utils import add_self_loops, degree
 
 import matplotlib.pyplot as plt
-from layers import GCNLayer
 from models import GCN
 
 transform = T.Compose([
