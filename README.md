@@ -30,9 +30,11 @@ This repository contains the following model implementations:
 
 - Graph Convolutional Networks (GCN) [[`gcn`](https://github.com/rish-16/pytorch-graphdl/tree/main/gcn)]
 - Graph Attention Networks (GAT) [[`gat`](https://github.com/rish-16/pytorch-graphdl/tree/main/gat)]
+- Graph Transformer Networks (GTN) [[`gat`](https://github.com/rish-16/pytorch-graphdl/tree/main/gtn)]
 
 ## TODO
-- [ ] Graph Transformer
+- [ ] GraphSage
+- [ ] DeepWalk
 
 ## License
 [MIT](https://github.com/rish-16/pytorch-graphdl/blob/main/LICENSE)
