@@ -30,9 +30,9 @@ In GDL, there are two types of tasks: `transductive` and `inductive`
 This repository contains the following model implementations:
 
 - Graph Convolutional Networks (GCN) [[`gcn`](https://github.com/rish-16/pytorch-graphdl/tree/main/gcn)]
+- Graph Attention Networks (GAT) [[`gat`](https://github.com/rish-16/pytorch-graphdl/tree/main/gat)]
 
 ## TODO
-- [ ] Graph Attention Networks
 - [ ] Graph Transformer
 
 ## License
