@@ -17,7 +17,6 @@ This is a sincere effort to learn more about Graph Deep Learning and the various
 
 - `add`: adds all the node feature vectors
 - `max`: gets the maximum node feature vector
-- `min`: gets the minimum node feature vector
 - `mean`: gets the mean of all node feature vectors
 
 ## Tasks
