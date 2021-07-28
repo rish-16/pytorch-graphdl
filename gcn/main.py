@@ -16,15 +16,15 @@ transform = T.Compose([
 ])
 dataset = tg.datasets.Planetoid(root="./dataset/", name="Cora", split="public", transform=transform)
 
-train_mask = None
-test_mask = None
+data = dataset[0]
+train_mask = data.train_mask
+test_mask = data.test_mask
 features = dataset.data.x
 edge_idx = dataset.data.edge_index
 labels = dataset.data.y
 
 model = GCN(dataset.num_node_features, dataset.num_classes)
 optimizer = Adam(model.parameters(), lr=0.01)
-data = dataset[0]
 
 def get_test_acc(model):
     model.eval()
@@ -43,7 +43,7 @@ for epoch in range(200):
     model.train()
     optimizer.zero_grad()
     pred = model(features, edge_idx)
-    loss = F.nll_loss(pred[data.train_mask], labels[data.train_mask])
+    loss = F.nll_loss(pred[train_mask], labels[train_mask])
     loss.backward()
     optimizer.step()
         
