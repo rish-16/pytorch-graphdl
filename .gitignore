@@ -1,5 +1,6 @@
 gcn/dataset/*
 gat/dataset/*
+deepwalk/dataset/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
